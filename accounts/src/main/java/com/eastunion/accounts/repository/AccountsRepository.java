@@ -13,6 +13,7 @@ public interface AccountsRepository extends JpaRepository<Accounts, Long> {
 
     Optional<Accounts> findByCustomerId(Long customerId);
 
+    //using these annotations because my custom method is modifying the database
     @Transactional
     @Modifying
     void deleteByCustomerId(Long customerId);
