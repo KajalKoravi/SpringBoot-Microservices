@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 @ControllerAdvice
-public class GlobalExceptionHandler {
+public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
    //Handle all types of runtime exceptions using global logic
     @ExceptionHandler(Exception.class)
@@ -34,7 +34,7 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(errorResponseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    /*@Override
+    @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatusCode status, WebRequest request) {
         Map<String, String> validationErrors = new HashMap<>();
@@ -46,7 +46,7 @@ public class GlobalExceptionHandler {
             validationErrors.put(fieldName, validationMsg);
         });
         return new ResponseEntity<>(validationErrors, HttpStatus.BAD_REQUEST);
-    }*/
+    }
 
 
     @ExceptionHandler(ResourceNotFoundException.class)
