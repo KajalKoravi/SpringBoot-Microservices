@@ -1,0 +1,12 @@
+
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to EastUnion Bank accounts related QA APIs "
+  contactDetails:
+    name: "Jay smith - QA Lead"
+    email: "smithjay@eastunion.com"
+  onCallSupport:
+    - (666) 265-3765
+    - (666) 734-8371

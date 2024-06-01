@@ -8,13 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Loans" />
-        <module name="Cards" />
         <module name="accounts" />
+        <module name="configserver" />
+        <module name="Cards" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="accounts" target="17" />
       <module name="Cards" target="17" />
+      <module name="configserver" target="17" />
       <module name="Loans" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -23,6 +25,7 @@
       <module name="Cards" options="-parameters" />
       <module name="Loans" options="-parameters" />
       <module name="accounts" options="-parameters" />
+      <module name="configserver" options="-parameters" />
     </option>
   </component>
 </project>

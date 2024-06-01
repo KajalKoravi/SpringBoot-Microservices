@@ -1,0 +1,12 @@
+
+build:
+  version: "2.0"
+
+loans:
+  message: "Welcome to EastUnion Bank loans related QA APIs "
+  contactDetails:
+    name: "Cyrano Marita - QA Lead"
+    email: "cyrano@eastunion.com"
+  onCallSupport:
+    - (785) 545-6565
+    - (853) 546-3467
