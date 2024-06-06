@@ -22,6 +22,7 @@ import java.util.Random;
 @Service
 @AllArgsConstructor
 public class AccountsServiceImpl implements IAccountsService {
+
     private AccountsRepository accountsRepository;
     private CustomerRepository customerRepository;
 

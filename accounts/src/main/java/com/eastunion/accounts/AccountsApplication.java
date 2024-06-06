@@ -17,6 +17,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 /*@ComponentScans({ @ComponentScan("com.eazybytes.accounts.controller") })
 @EnableJpaRepositories("com.eazybytes.accounts.repository")
 @EntityScan("com.eazybytes.accounts.model")*/
+@SpringBootApplication
 @EnableFeignClients
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @EnableConfigurationProperties(value = {AccountsContactInfoDto.class})
@@ -39,7 +40,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 				url = "to be updated"
 		)
 )
-@SpringBootApplication
 public class AccountsApplication {
 
 	public static void main(String[] args) {
